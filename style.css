@@ -1,0 +1,369 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Header styles */
+@font-face {
+  font-family: "AstoriaMedium";
+  src: url("/assets/AstoriaMedium.ttf") format("truetype");
+}
+
+#logo {
+  position: absolute;
+  width: 83px;
+  height: 56px;
+  left: 104px;
+  top: 29px;
+}
+
+#home {
+  position: absolute;
+  width: 133.12px;
+  height: 17.65px;
+  left: 250px;
+  top: 48px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 91.7%;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+#about {
+  position: absolute;
+  width: 133.12px;
+  height: 17.65px;
+  left: 400px;
+  top: 48px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 91.7%;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  position: relative;
+
+  width: 135px;
+  height: 15px;
+  left: 500px;
+  top: 32px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 91.7%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+
+  color: #656c73;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 135px;
+  height: 18px;
+  left: 485px;
+  top: 50px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 70%;
+
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #6fa12b;
+  color: white;
+  border-radius: 12px;
+}
+
+a.section {
+  color: #656c73;
+}
+
+#contact {
+  position: absolute;
+  width: 149.27px;
+  height: 17.56px;
+  left: 720px;
+  top: 48px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 91.7%;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.book {
+  background-color: #6fa12b;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  width: 187.68px;
+  height: 52.68px;
+  left: 1240px;
+  top: 32px;
+  border-radius: 12px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 91.7%;
+}
+
+.book:hover {
+  background-color: white;
+  color: #6fa12b;
+  border: 2px solid #6fa12b;
+}
+
+.booklink {
+  color: white;
+  text-decoration: none;
+}
+
+.booklink:hover {
+  color: #dc780b;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Main styles */
+
+.top_title {
+  max-width: 1440px;
+  margin-top: 10%;
+  margin-bottom: -3%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 91.7%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #dc780b;
+}
+
+.mid_title {
+  max-width: 1440px;
+  margin-bottom: -1%;
+  font-family: "AstoriaMedium";
+  font-size: 40px;
+  line-height: 79px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.sub_title {
+  max-width: 1440px;
+  margin-bottom: 8%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+
+  align-items: center;
+  text-align: center;
+
+  color: #656c73;
+}
+
+.sub_title p {
+  margin-bottom: -15px;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 5% auto;
+  font-family: "Helvetica";
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  position: relative;
+  max-height: 213px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 28%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 35px 0px 18px 18px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  position: relative;
+  padding: 12px 12px 32px 24px;
+  margin: 8px 8px 8px 8px;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.card_title {
+  font-family: "AstoriaMedium";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 16px 0px 10px 0px;
+
+  display: flex;
+  align-items: center;
+
+  color: #dc780b;
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #656c73;
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
+
+.button img {
+  margin: 32px 0px -10px 0px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.star {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  left: 190px;
+  top: 165px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
